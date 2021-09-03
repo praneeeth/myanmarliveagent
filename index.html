@@ -367,7 +367,7 @@
             const name = document.getElementById("name")
                                 if (document.getElementById("name").value.length == 0) {
                                     name.classList.add('invalid-placeholder');
-                                document.getElementById("invalid-message").innerHTML ="Name is required to connect an agent!"
+                                document.getElementById("invalid-message").innerHTML ="အေးဂျင့်နှင့် ဆက်သွယ်ပေးရန် နာမည် ထည့်သွင်းရန် လိုအပ်ပါသည်"
             }
                                 else {
                                     name.classList.remove("invalid-placeholder");
@@ -379,7 +379,7 @@
             const email = document.getElementById("email")
                                 if (document.getElementById("email").value.length == 0) {
                                     email.classList.add('invalid-placeholder');
-                                document.getElementById("invalid-message").innerHTML ="Email is required to connect an agent!"
+                                document.getElementById("invalid-message").innerHTML ="အေးဂျင့်နှင့် ဆက်သွယ်ပေးရန် email လိပ်စာ ထည့်သွင်းရန် လိုအပ်ပါသည်"
             }
                                 else {
                                     email.classList.remove("invalid-placeholder");
@@ -443,7 +443,7 @@
                                 name.focus();
                 }
                                 else if (data.email.length == 0) {
-                                    document.getElementById("invalid-message").innerHTML ="Email is required to connect an agent!"
+                                    document.getElementById("invalid-message").innerHTML ="အေးဂျင့်နှင့် ဆက်သွယ်ပေးရန် email လိပ်စာ ထည့်သွင်းရန် လိုအပ်ပါသည်"
                     email.placeholder ="အေးဂျင့်နှင့် ဆက်သွယ်ပေးရန် email လိပ်စာ ထည့်သွင်းရန် လိုအပ်ပါသည်"
                                 email.classList.add('invalid-placeholder');
                                 name.classList.remove("invalid-placeholder");
@@ -452,7 +452,7 @@
                                 email.focus();
                 }
                                 else if (!emailRegex.test(data.email)) {
-                                    document.getElementById("invalid-message").innerHTML ="Valid email is required to connect an agent"
+                                    document.getElementById("invalid-message").innerHTML ="အေးဂျင့်နှင့် ဆက်သွယ်နိုင်ရန် မှန်ကန်သော email လိပ်စာ ဖြစ်ရန် လိုအပ်ပါသည်"
                     email.placeholder ="အေးဂျင့်နှင့် ဆက်သွယ်နိုင်ရန် မှန်ကန်သော email လိပ်စာ ဖြစ်ရန် လိုအပ်ပါသည်"
                                 name.classList.remove("invalid-placeholder");
                                 phone.classList.remove("invalid-placeholder")
