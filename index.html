@@ -336,7 +336,7 @@
         var totalSelection = []
                                 var count = 0
                                 var countrys = {
-                                    "Myanmar": ["Telenor","Ooredoo","MPT","Mytel","Wave Money","easyPoints","KBZPay","Onepay","Card Payments Myanmar"]
+                                    "Myanmar": ["Telenor","Ooredoo","MPT","Mytel","Wave_Money","easyPoints","KBZPay","Onepay","Card_Payments_Myanmar"]
         }
 
                                 $(document).ready(function () {
@@ -348,8 +348,7 @@
             });
 
                                 $('#country').select2({
-                                    data: ["7-Eleven", "Bank Transfers", "Card Payments", "Cash at retail exclude 7-11",
-                                "Coins.ph", "GCash", "Globe", "Grabpay", "PayMaya", "Smart/Sun"]
+                                    data: ["Telenor","Ooredoo","MPT","Mytel","Wave_Money","easyPoints","KBZPay","Onepay","Card_Payments_Myanmar"]
             })
         });
 
@@ -459,24 +458,7 @@
                                 message.classList.remove("invalid-placeholder")
                                 email.focus();
                 }
-                // else if (data.phone.length == 0) {
-                                    //     document.getElementById("invalid-message").innerHTML = language == "tl" ? "No.Telepon wajib diisi untuk terhubung ke Agen Kami!" : "Phone number is required to connect an agent!"
-                                    //     phone.placeholder = language == "tl" ? 'No.Telepon wajib diisi untuk terhubung ke Agen Kami' : "Phone number is required to connect an agent"
-                                    //     phone.classList.add('invalid-placeholder');
-                                    //     name.classList.remove("invalid-placeholder");
-                                    //     email.classList.remove("invalid-placeholder")
-                                    //     message.classList.remove("invalid-placeholder")
-                                    //     phone.focus();
-                                    // }
-                                    // else if (message.value == "") {
-                                    //     document.getElementById("invalid-message").innerHTML = language == "tl" ? "No.Telepon wajib diisi untuk terhubung ke Agen Kami!" : "Phone number is required to connect an agent!"
-                                    //     // me.placeholder = language == "tl" ? 'No.Telepon wajib diisi untuk terhubung ke Agen Kami' : "Phone number is required to connect an agent"
-                                    //     phone.classList.remove('invalid-placeholder');
-                                    //     name.classList.remove("invalid-placeholder");
-                                    //     email.classList.remove("invalid-placeholder")
-                                    //     message.classList.add('invalid-placeholder');
-                                    //     message.focus();
-                                    // }
+           
                                     console.log("Empty/Invalid values are present in the form ")
                                 }
                                 else {
@@ -636,17 +618,17 @@
                                         <h6 id="name-header">
                                             Pangalan<sup>*</sup>
                                         </h6>
-                                        <input type="text" placeholder="I-enter ang iyong pangalan" class="input-field" id="name" name="name"
+                                        <input type="text" placeholder="ကျေးဇူးပြုပြီး သင့်ရဲ့ နာမည်ကို ထည့်ပါ" class="input-field" id="name" name="name"
                                             oninput="nameHandler()" required>
                                             <h6 id="email-header">
                                                 Email<sup>*</sup>
                                             </h6>
-                                            <input type="email" placeholder="I-enter ang iyong email" class="input-field" id="email" name="email"
+                                            <input type="email" placeholder="ကျေးဇူးပြုပြီး သင့်ရဲ့email လိပ်စာကို ထည့်ပါ" class="input-field" id="email" name="email"
                                                 oninput="emailHandler()" required>
                                                 <h6 id="phone-header">
                                                     Cellphone Number<sup>*</sup>
                                                 </h6>
-                                                <input type="number" placeholder="I-enter ang iyong cellphone number" class="input-field" id="phone"
+                                                <input type="number" placeholder="ကျေးဇူးပြုပြီး သင့်ရဲ့ဖုန်းနံပတ်ကို ထည့်ပါ" class="input-field" id="phone"
                                                     name="phone">
                                                     <h6 id="payment-header">
                                                         Payment Method<sup>*</sup>
